@@ -3,13 +3,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/Css/Style.css" rel="stylesheet" />
-
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+      type="text/css"
+      href="./pluginSlick/slick/slick.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./pluginSlick/slick/slick-theme.css"
+    />
+
     <title>Budget Travel</title>
   </head>
   <body>
@@ -17,21 +21,21 @@
     <main id="main">
       <!-- Navbar start -->
       <div class="navbar" id="navbar">
-        <h1>Budget Travel</h1>
+        <a href="./Index.html" class="logo">
+          <img src="./Assets/logo.png" alt="logo" class="logo" />
+        </a>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="destinations.html">Destinations</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="./Index.html">Home</a></li>
+          <li><a href="./Pages/destination.html">Destinations</a></li>
+          <li><a href="./Pages/about.html">About Us</a></li>
+          <li><a href="./Pages/ContactUs.html">Contact Us</a></li>
         </ul>
       </div>
       <!-- Navbar end -->
 
       <div class="hero">
-        <div class="heading">
-          <h3>Find your next destination</h3>
-
-          <h1>Iceland</h1>
+        <div class="heading" id="typingC">
+          <div class="typing"></div>
         </div>
 
         <img src="./Assets/clouds.png" alt="clouds" class="clouds" />
@@ -42,42 +46,10 @@
     <!-- Destinations start -->
     <div class="destination">
       <h1><span>Popular</span> Destinations</h1>
-      <div class="d-wrapper">
-        <div class="carousl">
-          <div class="slider">
-            <div>
-              <div id="img1">
-                <h1>
-                  <span>Paris</span>
-                </h1>
-              </div>
-            </div>
-            <div>
-              <div id="img1">
-                <h1>
-                  <span>Paris</span>
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="moreDest">
-          <div class="card">
-            <img src="./Assets/heroBg.jpg" alt="Iceland" />
-          </div>
-          <div class="card">
-            <img src="./Assets/heroBg.jpg" alt="Iceland" />
-          </div>
-          <div class="card">
-            <img src="./Assets/heroBg.jpg" alt="Iceland" />
-          </div>
-          <div class="card">
-            <img src="./Assets/heroBg.jpg" alt="Iceland" />
-          </div>
-        </div>
-      </div>
     </div>
-
+    <div class="galleryPlugin">
+      <div class="your-class" id="cardid"></div>
+    </div>
     <!-- Destinations end -->
 
     <!-- Customer feedback -->
@@ -87,7 +59,7 @@
       <div class="f-wrapper">
         <div class="cardWrapper">
           <div class="customerCard">
-            <img src="./Assets/heroBg.jpg" alt="Iceland" />
+            <img src="./Assets/customer1.jpg" alt="Iceland" />
             <h3>John Doe</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -98,7 +70,7 @@
         </div>
         <div class="cardWrapper">
           <div class="customerCard" id="centerCard">
-            <img src="./Assets/heroBg.jpg" alt="Iceland" />
+            <img src="./Assets/customer2.jpg" alt="Iceland" />
             <h3>John Doe</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -109,7 +81,7 @@
         </div>
         <div class="cardWrapper">
           <div class="customerCard">
-            <img src="./Assets/heroBg.jpg" alt="Iceland" />
+            <img src="./Assets/customer3.jpg" alt="Iceland" />
             <h3>John Doe</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -139,11 +111,11 @@
     <!-- Footer start -->
     <div class="footer">
       <div class="footer-wrap">
-        <div class="logo">
-          <div class="logoWrap">
-            <h1><span>Budget</span> Travel</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          </div>
+        <div class="logoWrap">
+          <a href="index.html" class="flogo">
+            <img src="./Assets/logo.png" alt="logo" />
+          </a>
+          <p>Explore and Travel to the most beautiful places in the world.</p>
         </div>
 
         <div class="linksWrapper">
@@ -172,6 +144,15 @@
     </div>
 
     <!-- Footer end -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./pluginSlick/slick/slick.min.js"
+    ></script>
 
     <script src="index.js"></script>
   </body>

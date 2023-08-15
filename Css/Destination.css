@@ -1,0 +1,527 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: none;
+
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   column-gap: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: row;
+    padding:  1.5rem 0;
+    background: black !important;
+}
+
+.navbar a {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+   
+    margin: 0 !important;
+    border: none !important;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+   
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    
+ 
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    padding: 0 1rem;
+    margin-bottom: 0 !important;
+}
+
+
+ul li {
+    padding: 0 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* .about {
+    padding: 120px 0;
+} */
+main {
+    padding-top: 80px;
+}
+section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #757575;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.section-title {
+    padding-bottom: 2rem;
+}
+
+.section-bg {
+    background-color: #f5f5f5;
+}
+
+
+#hero {
+    width: 100%;
+    /* height: 100vh; */
+    background: linear-gradient(45deg, rgba(101, 100, 109, 0.9) 0%, rgba(52, 52, 53, 0.9) 100%), url(../Assets/hero-bg1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#hero .section-title {
+    color: white;
+}
+
+#hero h1 {
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+#hero p {
+    color: white;
+    font-size: 20px;
+}
+
+#team {
+    width: 100%;
+    text-align: center;
+}
+
+#team img {
+    border-radius: 50%;
+    padding-bottom: 1rem;
+}
+
+#item p {
+    font-size: 25px !important;
+}
+
+.services .icon-box {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+}
+
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+}
+
+.services .icon-box .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.services .iconbox-blue i {
+    color: #a1a2a3;
+}
+
+.services .iconbox-orange i {
+    color: #ffa76e;
+}
+
+.services .iconbox-danger i {
+    color: #db1313;
+}
+
+.services .icon-box .icon i {
+    font-size: 36px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.custom-card {
+    background: #000;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    color: white;
+}
+
+.userdetails {
+    display: flex;
+}
+
+.imgbox {
+    margin-right: 1rem;
+}
+
+.imgbox img {
+    border-radius: 50%;
+    width: 2rem;
+    border: 2px solid #cec5c5;
+}
+
+.detbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detbox p {
+    margin: 0;
+}
+
+.detbox .name {
+    color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+
+.detbox .designation {
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+ background-color: #000 !important;
+}
+
+
+.review h4 {
+    font-size: 1.4rem;
+    color: #fff !important;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.review p {
+    font-size: 0.95rem;
+    color: #fff;
+    font-weight: 500;
+    opacity: 50%;
+    line-height: 1.5;
+}
+
+.attribution {
+    font-size: 1rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.slider-img {
+    width: 100%;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    /* height: 100vh; */
+    /* width: 50%; */
+}
+
+#slider {
+    padding: 30px !important;
+}
+
+/* .country {
+    background-image: url('../Assets/dest/canada.jpg');
+    width: 100%;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+} */
+
+#canada {
+    display: block;
+    background-image: url('../Assets/dest/canada.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    /* background: rgba(255, 255, 255, 0.2); */
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+}
+
+#paris {
+    display: block;
+    background-image: url('../Assets/dest/paris.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    /* background: rgba(255, 255, 255, 0.2); */
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+}
+
+#india {
+    display: block;
+    background-image: url('../Assets/dest/india.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    /* background: rgba(255, 255, 255, 0.2); */
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+}
+
+#switzerland {
+    display: block;
+    background-image: url('../Assets/dest/switzerland.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    /* background: rgba(255, 255, 255, 0.2); */
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+}
+
+#rome {
+    display: block;
+    background-image: url('../Assets/dest/rome.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    /* background: rgba(255, 255, 255, 0.2); */
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+}
+
+.background {
+    filter: blur(4px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.foreground {
+    backdrop-filter: blur(10px);
+}
+
+.blur {
+    text-align: center;
+    backdrop-filter: blur(1px); /* blur effect to the backdrop */
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    height: 80vh;
+    border-radius: 25px;
+  }
+
+.blur h4, p {
+    color: #000;
+}
+
+.blur .review{
+    padding-top: 26rem;
+}
+
+.blur .review p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 18px;
+}
+
+#accordion .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #fff !important;
+    background: #000 !important;
+    font-weight: normal;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+#accordion p {
+    color: #000;
+}
+
+h3 {
+    margin-bottom: 0 !important;
+}
+
+.gallery-item {
+    width: 200px;
+    padding: 5px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0rem 2rem;
+    background-color: #000;
+    
+
+}
+
+.footer-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    
+ 
+}
+
+
+
+.logo p {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    
+    color:  #fff !important;
+}
+.flogo
+{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+   
+    margin: 0 !important;
+    border: none !important;
+   
+}
+.logoWrap p {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    color:  #fff !important;
+}
+
+.flogo img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    height: auto;
+    object-fit: contain;
+   
+}
+
+
+.linksWrapper {
+    
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.linksWrapper a , small{
+    text-decoration: none;
+   color:gray; 
+    font-size: 1rem;
+    font-weight: 500;
+
+    padding: 0.5rem 0;
+}
+
+.linksWrapper h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    color: #fff;
+
+}
+
+.linksWrapper a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+/* Footer css  ends*/

@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    background-color: #fff;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+/* Navbar css starts */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   column-gap: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: row;
+    padding:  1.5rem 0;
+    background: black;
+}
+
+.navbar a {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+   
+    margin: 0 !important;
+    border: none !important;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+   
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    
+ 
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    padding: 0 1rem;
+}
+
+
+ul li {
+
+    padding: 0 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Navbar css Ends */
+
+
+/* banner  */
+
+.banner {
+    background: url(../Assets/contactUsBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* banner ends */
+
+
+/* contact us section starts */
+
+
+
+.infowrapper {
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    padding: 1%;
+
+}
+.contactAgency {
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.contactAgency p {
+    font-size: 1rem;
+    font-weight: 500;
+   line-height:  1.5rem;
+   padding: 1rem 5rem 0 0;
+}
+
+.locationInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    padding: 2rem;
+    
+}
+
+.locationInfo p {
+    font-size: 1rem;
+    font-weight: 500;
+   line-height:  2rem;
+}
+
+
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+
+}
+
+form input {
+    width: 100%;
+   
+    margin: 1rem 0;
+    padding: 0.5rem;
+    
+    border-radius: 10px;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 10px;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
+
+/* footer css Starts */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0rem 2rem;
+    background-color: #000;
+    
+
+}
+
+.footer-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    
+ 
+}
+
+
+
+.logo p {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    
+    color:  #fff !important;
+}
+.flogo
+{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+   
+    margin: 0 !important;
+    border: none !important;
+   
+}
+.logoWrap p {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    color:  #fff !important;
+}
+
+.flogo img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    height: auto;
+    object-fit: contain;
+   
+}
+
+
+.linksWrapper {
+    
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.linksWrapper a , small{
+    text-decoration: none;
+   color:gray; 
+    font-size: 1rem;
+    font-weight: 500;
+
+    padding: 0.5rem 0;
+}
+
+.linksWrapper h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    color: #fff;
+
+}
+
+.linksWrapper a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+/* Footer css  ends*/
